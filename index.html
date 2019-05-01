@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Splitwise Website Simulation </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body onload="getInput()">
+    <div class="container">
+      <h1>Splitwise </h1>
+      <div class="jumbotron">
+        <h3>Give us the Values, We'll do the math :)</h3>
+        <form id="nameInputForm">
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter the Name">
+          </div>
+          <form id="nameInputForm">
+            <div class="form-group">
+              <label for="typeInput">Select</label>
+              <select id="typeInput">
+                <option value="negative">You owe the person</option>
+                <option value="positive">The person owes you</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="amountInput">₹</label>
+              <input type="number" class="form-control" id="amountInput" placeholder="Enter the Amount">
+            </div>
+            <button type="enter" class="btn-primary">Enter</button>
+        </form>
+      <div class="col-lg-12">
+        <div id="List">
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
